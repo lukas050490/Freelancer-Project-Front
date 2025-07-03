@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# 🧠 Freelancer Manager com IA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## ✨ Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Freelancer Manager com IA** é uma aplicação desenvolvida para profissionais autônomos e empreendedores que desejam organizar melhor seus negócios. Com uma interface intuitiva e moderna, a aplicação permite o gerenciamento de **clientes**, **projetos**, **tarefas** e **pagamentos**, com o auxílio da **API da OpenAI** para geração automatizada de **contratos**, **propostas** e **recibos personalizados**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática e segura para JavaScript.
+- **[Vite](https://vitejs.dev/)** — Ferramenta de build extremamente rápida.
+- **[Tailwind CSS](https://tailwindcss.com/)** — Estilização moderna e utilitária.
+- **[OpenAI API](https://platform.openai.com/)** — Geração de documentos automatizados com inteligência artificial.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 👤 Área de Clientes
+- Cadastro completo de clientes com nome e número de telefone.
+- Visualização de todos os clientes registrados.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 📁 Área de Projetos
+- Criação de projetos associados a cada cliente.
+- Edição e atualização dos dados dos projetos.
+- Geração automática de:
+  - Contratos personalizados
+  - Propostas comerciais
+  - Recibos de pagamento
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ✅ Área de Tarefas
+- Criação de tarefas vinculadas aos projetos/clientes.
+- Organização das tarefas por status:
+  - A Fazer
+  - Em Processo
+  - Concluída
+
+### 💰 Área de Pagamentos
+- Registro de pagamentos pendentes e efetuados.
+- Controle financeiro detalhado por cliente/projeto.
+
+---
+
+## 🤖 Geração de Documentos com IA
+
+A integração com a OpenAI permite a criação automática de documentos personalizados com base nas informações fornecidas pelo usuário. Essa funcionalidade torna a geração de **contratos**, **propostas** e **recibos** muito mais rápida e profissional.
+
+---
+
+## 📷 Demonstração
+
+![Demonstração do Projeto](./caminho/para/sua-imagem.gif)
+
+
+
+
