@@ -51,7 +51,7 @@ A integração com a OpenAI permite a criação automática de documentos person
 
 ## 📷 Demonstração
 
-![Demonstração do Projeto](./caminho/para/sua-imagem.gif)
+![Demonstração do Projeto](https://github.com/lukas050490/Freelancer-Project-Front/blob/main/public/Freelancer%20project%20-%20Google%20Chrome%2002_07_2025%2015_42_05.png)
 
 
 
